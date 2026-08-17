@@ -1,0 +1,85 @@
+{
+  "name": "dsh-skin",
+  "version": "1.5.0",
+  "description": "Skin ecosystem plugin for DeepSeek Harness: unified Skin Package, local Skin Repository, Skin Runtime, Skin Center and AI skin generation (Vision → SkinDesignSpec → deterministic build → render/diff/repair → AI skin lifecycle).",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./client": "./lib/client.cjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skins",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "skin",
+    "theme",
+    "cordis",
+    "plugin",
+    "ai"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huanmengyishi/skin.git"
+  },
+  "homepage": "https://github.com/huanmengyishi/skin#readme",
+  "bugs": {
+    "url": "https://github.com/huanmengyishi/skin/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots",
+        "theme",
+        "modules"
+      ],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "pngjs": "^3.4.0",
+    "puppeteer-core": "^25.7.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-atomic-write": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-home-paths": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-host-webserver": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-settings": ">=0.1.0-rc.0",
+    "@deepseek-ai/schemastery": ">=3",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "~18.3.1",
+    "playwright": "^1.61.1",
+    "sharp": "^0.35.3",
+    "tsdown": "^0.16.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

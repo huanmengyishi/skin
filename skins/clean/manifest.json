@@ -1,0 +1,17 @@
+{
+  "id": "clean",
+  "version": "0.1.0",
+  "name": "Clean Lab",
+  "author": "dsh-skin",
+  "description": "接近 Harness 默认视觉的清爽皮肤：中性底色、轻微品牌蓝、克制圆角。用于验证最小皮肤包契约（theme tokens + scoped CSS + 空 apply）。",
+  "tags": [
+    "builtin",
+    "minimal",
+    "clean"
+  ],
+  "skinApiVersion": 1,
+  "preview": {
+    "light": "preview/light.svg",
+    "dark": "preview/dark.svg"
+  }
+}

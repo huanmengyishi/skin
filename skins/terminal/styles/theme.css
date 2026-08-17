@@ -1,0 +1,94 @@
+/* Phosphor Terminal：CRT 磷光终端风格。
+   选择器只使用稳定锚点（body 作用域属性 / data-slot / 元素类型），不依赖 hashed class。 */
+body[data-dsh-skin="terminal"] {
+  font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+  background:
+    radial-gradient(ellipse at 50% -20%, rgba(51, 255, 102, 0.12), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0 1px, transparent 1px 3px),
+    var(--dsw-alias-bg-base, #0b120b);
+  background-attachment: fixed;
+  color: var(--dsw-alias-label-primary, #b8ffc8);
+  text-shadow: 0 0 6px rgba(51, 255, 102, 0.25);
+}
+body[data-dsh-skin="terminal"][data-dsh-skin-glow="on"] [data-slot="sidebar"],
+body[data-dsh-skin="terminal"][data-dsh-skin-glow="on"] [data-slot="conversation"],
+body[data-dsh-skin="terminal"][data-dsh-skin-glow="on"] [data-slot="details"] {
+  box-shadow: inset 0 0 24px rgba(51, 255, 102, 0.05);
+}
+body[data-dsh-skin="terminal"] [data-slot="sidebar"] {
+  background: var(--dsw-specific-sidebar-fill, #060a06);
+  border-right: 1px solid var(--dsw-alias-border-l1, #1e3a1e);
+}
+body[data-dsh-skin="terminal"] [data-slot="conversation"] {
+  background: transparent;
+}
+body[data-dsh-skin="terminal"] input,
+body[data-dsh-skin="terminal"] textarea {
+  background: var(--dsw-alias-bg-layer-1, #101a10);
+  border: 1px solid var(--dsw-alias-border-l2, #2f5c2f);
+  border-radius: 2px;
+  color: var(--dsw-alias-label-primary, #b8ffc8);
+  caret-color: var(--dsw-alias-brand-primary, #33ff66);
+  font-family: inherit;
+}
+body[data-dsh-skin="terminal"] input:focus,
+body[data-dsh-skin="terminal"] textarea:focus {
+  outline: 1px solid var(--dsw-alias-brand-primary, #33ff66);
+  box-shadow: 0 0 8px rgba(51, 255, 102, 0.35);
+}
+body[data-dsh-skin="terminal"] button {
+  background: var(--dsw-alias-bg-layer-2, #162216);
+  border: 1px solid var(--dsw-alias-border-l2, #2f5c2f);
+  border-radius: 2px;
+  color: var(--dsw-alias-label-primary, #b8ffc8);
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+body[data-dsh-skin="terminal"] button:hover {
+  background: var(--dsw-alias-brand-primary, #33ff66);
+  color: #041104;
+  text-shadow: none;
+}
+body[data-dsh-skin="terminal"] pre,
+body[data-dsh-skin="terminal"] code {
+  font-family: inherit;
+  background: #040704;
+  border: 1px solid var(--dsw-alias-border-l1, #1e3a1e);
+  border-radius: 2px;
+}
+body[data-dsh-skin="terminal"] [data-slot="shell.overlay"] > * {
+  background: var(--dsw-alias-bg-overlay, #0a0f0a);
+  border: 1px solid var(--dsw-alias-brand-primary, #33ff66);
+  border-radius: 2px;
+  box-shadow: 0 0 18px rgba(51, 255, 102, 0.3);
+  color: var(--dsw-alias-label-primary, #b8ffc8);
+  font-family: inherit;
+}
+/* 皮肤自有 chrome（由 client/index.js 挂载并标记所有权） */
+[data-skin-chrome="terminal-scanlines"] {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2147483000;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+[data-skin-chrome="terminal-statusbar"] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  background: #041104;
+  border-top: 1px solid var(--dsw-alias-border-l2, #2f5c2f);
+  color: #33ff66;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  z-index: 2147483001;
+}

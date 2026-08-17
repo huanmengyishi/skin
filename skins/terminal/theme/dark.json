@@ -1,0 +1,15 @@
+{
+  "--dsw-alias-bg-base": "#060a06",
+  "--dsw-alias-bg-layer-1": "#0b120b",
+  "--dsw-alias-bg-layer-2": "#162216",
+  "--dsw-alias-bg-overlay": "#0a0f0a",
+  "--dsw-alias-border-l1": "#1e3a1e",
+  "--dsw-alias-border-l2": "#2f5c2f",
+  "--dsw-alias-brand-primary": "#33ff66",
+  "--dsw-alias-label-primary": "#b8ffc8",
+  "--dsw-alias-label-secondary": "#7fae8a",
+  "--dsw-alias-state-error-primary": "#ff5f56",
+  "--dsw-alias-state-success-primary": "#33ff66",
+  "--dsw-alias-state-warn-primary": "#ffd166",
+  "--dsw-specific-sidebar-fill": "#060a06"
+}

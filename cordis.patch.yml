@@ -1,0 +1,5 @@
+# dsh-skin bundle patch: insert the single dsh-skin row (host + client dual face).
+# Skins are repository resources managed by this plugin, never their own rows.
+- insert:
+    - id: dsh-skin
+      name: dsh-skin

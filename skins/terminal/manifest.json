@@ -1,0 +1,18 @@
+{
+  "id": "terminal",
+  "version": "0.1.0",
+  "name": "Phosphor Terminal",
+  "author": "dsh-skin",
+  "description": "CRT 磷光终端风格：墨绿底色、磷光绿文字、扫描线覆盖、等宽字、发光边框与终端状态栏。覆盖 background/header/sidebar/card/message/input/button/code/status/loading/modal/typography 组件矩阵。",
+  "tags": [
+    "builtin",
+    "retro",
+    "terminal",
+    "crt"
+  ],
+  "skinApiVersion": 1,
+  "preview": {
+    "light": "preview/light.svg",
+    "dark": "preview/dark.svg"
+  }
+}

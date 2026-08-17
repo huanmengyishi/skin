@@ -1,0 +1,40 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "client/index.js",
+      "size": 1518,
+      "sha256": "69eca9dfd01534aeab8984fdbe891a37deaf65ad4123c62f5f944567d736c1e6"
+    },
+    {
+      "path": "manifest.json",
+      "size": 532,
+      "sha256": "9a271cdd1c83365823f7a49dcd9a7d02d78641b342408d42df0663018f2fb0de"
+    },
+    {
+      "path": "preview/dark.svg",
+      "size": 671,
+      "sha256": "d4e1d48d3961dc095a26126cdc54157bb475a63228e0f3f7b2c72482bad0cbff"
+    },
+    {
+      "path": "preview/light.svg",
+      "size": 672,
+      "sha256": "b287cd6e1aae08cf2fb8003a6b37e61128c201c0430f727db108a37123948c45"
+    },
+    {
+      "path": "styles/theme.css",
+      "size": 3408,
+      "sha256": "3da74148eb726480535bbbac1237bf76e23e20dda665dfc061dfb09a56706e5d"
+    },
+    {
+      "path": "theme/dark.json",
+      "size": 549,
+      "sha256": "9a1af28d4278f8715042f753215f2d06e5a7029ff96ad35d25dcd2bbd3b9a6b9"
+    },
+    {
+      "path": "theme/light.json",
+      "size": 549,
+      "sha256": "e0381f89dcaeefeaca40a27f3b667dd4b7e7f0acb56c094dce4fab5977ad8ab0"
+    }
+  ]
+}

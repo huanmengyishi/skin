@@ -1,0 +1,10 @@
+/* clean：全部选择器受 body[data-dsh-skin="clean"] 作用域约束，不污染其他插件。 */
+body[data-dsh-skin="clean"] {
+  font-family: var(--dsw-font-family, inherit);
+}
+body[data-dsh-skin="clean"] [data-slot="sidebar"] {
+  border-right: 1px solid var(--dsw-alias-border-l1, transparent);
+}
+body[data-dsh-skin="clean"] button {
+  border-radius: 6px;
+}

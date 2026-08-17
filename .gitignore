@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build output
+lib/
+*.tsbuildinfo
+coverage/
+
+# local dev profile / test environment (contains skins cache, settings, evidence)
+.dev-home/
+
+# logs & env
+*.log
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 历史审计笔记（本地档案；正式文档见 docs/ 其余文件）
+docs/phase0-notes/
