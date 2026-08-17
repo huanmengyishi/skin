@@ -74,7 +74,11 @@
     "sharp": "^0.35.3",
     "tsdown": "^0.16.0",
     "typescript": "^5.7.0",
-    "vitest": "^4.0.0"
+    "vitest": "^4.0.0",
+    "@deepseek-ai/dsh-client-modules": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-client-ui-settings-plugins": ">=0.1.0-rc.0",
+    "@deepseek-ai/dsh-client-ui-theme": ">=0.1.0-rc.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
